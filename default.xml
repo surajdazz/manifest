@@ -28,9 +28,9 @@
   <remote  name="caf_bluetooth"
            fetch="https://source.codeaurora.org"
            review="codeaurora.org"
-           revision="refs/tags/LA.UM.8.12.r1-13700-sm8250.0" />
+           revision="refs/tags/LA.UM.8.12.r1-13800-sm8250.0" />
 
-  <default revision="refs/tags/LA.UM.8.2.r2-02500-sdm660.0"
+  <default revision="refs/tags/LA.UM.8.12.r1-13800-sm8250.0"
            remote="caf"
            sync-j="4"
            sync-c="true"/>
@@ -740,7 +740,7 @@
   <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services"/>
   <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools"/>
   <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb"/>
-  <project name="platform/vendor/qcom-opensource/wfd-commonsys" path="vendor/qcom/opensource/commonsys-intf/wfd" revision="refs/tags/LA.UM.8.12.r1-13700-sm8250.0"/>
+  <project name="platform/vendor/qcom-opensource/wfd-commonsys" path="vendor/qcom/opensource/commonsys-intf/wfd"/>
   <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig"/>
   <project path="vendor/pa" name="surajdazz/android_vendor_pa" remote="github" revision="quartz" >
     <copyfile src="build.sh" dest="rom-build.sh" />
