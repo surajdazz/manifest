@@ -26,12 +26,12 @@
           fetch="https://github.com/PixelExperience-Devices"
           revision="ten" />
 
-  <remote name="pixel-devices-bitbucket"
-          fetch="https://bitbucket.org/PixelExperience-Devices"
-          revision="ten" />
-
   <remote name="pixel-gitlab"
-          fetch="https://gitlab.com/PixelExperience"
+          fetch="https://gitlab.pixelexperience.org/android"
+          revision="ten" />
+  
+  <remote name="pixel-devices-blobs"
+          fetch="https://gitlab.pixelexperience.org/android/vendor-blobs"
           revision="ten" />
 
   <remote name="bitbucket"
@@ -357,7 +357,7 @@
   <project path="external/smali" name="platform/external/smali" />
   <project path="external/snakeyaml" name="platform/external/snakeyaml" />
   <project path="external/sonic" name="platform/external/sonic" />
-  <project path="external/sonivox" name="platform/external/sonivox" />
+  <project path="external/sonivox" name="external_sonivox" remote="pixel" />
   <project path="external/speex" name="platform/external/speex" />
   <project path="external/spirv-llvm" name="platform/external/spirv-llvm" />
   <project path="external/sqlite" name="platform/external/sqlite" />
@@ -418,6 +418,7 @@
   <project path="frameworks/opt/car/setupwizard" name="platform/frameworks/opt/car/setupwizard" />
   <project path="frameworks/opt/chips" name="platform/frameworks/opt/chips" />
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" />
+  <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" />
   <project path="frameworks/opt/gamesdk" name="platform/frameworks/opt/gamesdk" />
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" />
   <project path="frameworks/opt/net/ike" name="platform/frameworks/opt/net/ike" />
@@ -483,19 +484,19 @@
   <project path="packages/apps/Car/libs" name="platform/packages/apps/Car/libs" />
   <project path="packages/apps/Car/tests" name="platform/packages/apps/Car/tests" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
-  <project path="packages/apps/EmergencyInfo" name="platform/packages/apps/EmergencyInfo" />
+  <project path="packages/apps/EmergencyInfo" name="packages_apps_EmergencyInfo" remote="pixel" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
-  <project path="packages/apps/PermissionController" name="platform/packages/apps/PackageInstaller" />
+  <project path="packages/apps/PermissionController" name="packages_apps_PackageInstaller" remote="pixel" />
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/SafetyRegulatoryInfo" name="platform/packages/apps/SafetyRegulatoryInfo" />
   <project path="packages/apps/SampleLocationAttribution" name="platform/packages/apps/SampleLocationAttribution" />
   <project path="packages/apps/SecureElement" name="platform/packages/apps/SecureElement" />
-  <project path="packages/apps/SettingsIntelligence" name="platform/packages/apps/SettingsIntelligence" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="pixel" />
   <project path="packages/apps/StorageManager" name="platform/packages/apps/StorageManager" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
   <project path="packages/apps/Terminal" name="platform/packages/apps/Terminal" />
@@ -576,7 +577,6 @@
   <project path="system/libhidl" name="platform/system/libhidl" />
   <project path="system/libhwbinder" name="platform/system/libhwbinder" />
   <project path="system/libsysprop" name="platform/system/libsysprop" />
-  <project path="system/libufdt" name="platform/system/libufdt" />
   <project path="system/libvintf" name="platform/system/libvintf" />
   <project path="system/linkerconfig" name="platform/system/linkerconfig" />
   <project path="system/media" name="platform/system/media" />
@@ -698,8 +698,8 @@
   <project path="hardware/lineage/livedisplay" name="android_hardware_lineage_livedisplay" remote="lineage" />
 
   <!-- Packages repos -->
-  <project path="packages/apps/Email" name="android_packages_apps_Email" remote="lineage" />
-  <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="lineage" />
+  <project path="packages/apps/Email" name="platform/packages/apps/Email" />
+  <project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" />
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
 
   <!-- External repos -->
@@ -839,6 +839,7 @@
   <project path="external/libcxx" name="external_libcxx" remote="pixel" />
   <project path="external/libhevc" name="external_libhevc" remote="pixel" />
   <project path="external/libtextclassifier" name="external_libtextclassifier" remote="pixel" />
+  <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="pixel-gitlab" />
   <project path="external/selinux" name="external_selinux" remote="pixel" />
   <project path="external/skia" name="external_skia" remote="pixel" />
   <project path="external/tinyalsa" name="external_tinyalsa" remote="pixel" />
@@ -859,6 +860,7 @@
   <project path="system/core" name="system_core" remote="pixel" />
   <project path="system/hardware/interfaces" name="system_hardware_interfaces" remote="pixel" />
   <project path="system/keymaster" name="system_keymaster" remote="pixel" />
+  <project path="system/libufdt" name="system_libufdt" remote="pixel" />
   <project path="system/netd" name="system_netd" remote="pixel-plus" />
   <project path="system/sepolicy" name="system_sepolicy" remote="pixel" />
   <project path="system/timezone" name="system_timezone" remote="pixel" />
