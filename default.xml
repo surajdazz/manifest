@@ -871,7 +871,6 @@
   <project path="device/oneplus/guacamoleb" name="surajdazz/device_oneplus_guacamoleb" remote="github" revision="pe"/>
   <project path="device/oneplus/sm8150-common" name="surajdazz/device_oneplus_sm8150-common" remote="github" revision="pe"/>
   <project name="surajdazz/oneplus7-kernel" path="kernel/oneplus/sm8150" remote="github" revision="oos" clone-depth="1" />
-  <project name="Spookcity/vendor_oneplus" path="vendor/oneplus" remote="github" revision="ten" clone-depth="1" />
   <project name="kdrag0n/proton-clang" path="prebuilts/clang/host/linux-x86/clang-proton" remote="github" revision="master" clone-depth="1" />
   <project name="android_device_oneplus_common" path="device/oneplus/common" remote="lineage" revision="lineage-17.1" />
   <project name="packages_apps_PixelLiveWallpaper" path="packages/apps/PixelLiveWallpaper" remote="pixel-gitlab" revision="ten" clone-depth="1" />
@@ -881,5 +880,7 @@
   <project name="android_vendor_nxp_opensource_packages_apps_Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" remote="lineage" revision="lineage-17.1" />
   <project name="android_vendor_nxp_opensource_halimpl" path="vendor/nxp/opensource/sn100x/halimpl" remote="lineage" revision="lineage-17.1-sn100x" />
   <project name="android_vendor_nxp_opensource_hidlimpl" path="vendor/nxp/opensource/sn100x/hidlimpl" remote="lineage" revision="lineage-17.1-sn100x" />
+  <project name="vendor_oneplus_guacamoleb" path="vendor/oneplus/guacamoleb" remote="pixel-devices-blobs" revision="ten" clone-depth="1" />
+  <project name="vendor_oneplus_sm8150-common" path="vendor/oneplus/sm8150-common" remote="pixel-devices-blobs" revision="ten" clone-depth="1" />
 
 </manifest>
