@@ -24,7 +24,6 @@
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="evo" />
-  <project path="frameworks/base" name="frameworks_base" remote="evo" />
   <project path="frameworks/native" name="frameworks_native" remote="evo" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="evo" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="evo" />
@@ -46,7 +45,6 @@
   </project>
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="evo" />
   <project path="manifest" name="manifest" remote="evo" />
-  <project path="vendor/aosp" name="vendor_aosp" remote="evo" />
   <project path="vendor/gapps" name="vendor_gapps" remote="evo-gitlab" clone-depth="1" />
   <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="evo" />
 
@@ -72,5 +70,8 @@
   <project path="system/core" name="system_core" remote="evo-gitlab" />
   <project path="system/netd" name="system_netd" remote="evo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
+
+  <project path="frameworks/base" name="surajdazz/frameworks_base" remote="github" revision="ten" />
+  <project path="vendor/aosp" name="surajdazz/vendor_aosp" remote="github" revision="ten" />
 
 </manifest>
