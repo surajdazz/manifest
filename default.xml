@@ -1217,7 +1217,7 @@
 
   <!-- Device Repos -->
   <project path="device/xiaomi/sweet" name="surajdazz/device_xiaomi_sweet" remote="github" revision="derp-11" />
-  <project path="vendor/xiaomi/sweet" name="DerpFest-Devices/vendor_xiaomi_sweet" remote="github" revision="derp-11 clone-depth="1" />
+  <project path="vendor/xiaomi/sweet" name="DerpFest-Devices/vendor_xiaomi_sweet" remote="github" revision="derp-11" clone-depth="1" />
   <project path="kernel/xiaomi/sweet" name="AdarshGrewal/kernel_xiaomi_sweet" remote="github" revision="11" clone-depth="1" />
 
 </manifest>
