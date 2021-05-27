@@ -1226,6 +1226,6 @@
   <project path="hardware/samsung_slsi/libbt" name="android_hardware_samsung_slsi_libbt" remote="lineage" />
   <project path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal" remote="lineage" />
   <project path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib" remote="lineage" />
-  <project path="kernel/samsung/gta4xl" name="android_kernel_samsung_gta4xl" remote="lineage" />
+  <project path="kernel/samsung/gta4xl" name="android_kernel_samsung_gta4xl" remote="lineage" clone-depth="1" />
 
 </manifest>
