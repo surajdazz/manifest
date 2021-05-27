@@ -1216,8 +1216,8 @@
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="lineage" />
 
   <!-- Device Repos -->
-  <project path="device/xiaomi/sweet" name="surajdazz/device_xiaomi_sweet" remote="github" revision="eleven-plus" />
-  <project path="vendor/xiaomi/sweet" name="AdarshGrewal/vendor_xiaomi_sweet" remote="github" revision="lineage-18.1" />
-  <project path="kernel/xiaomi/sweet" name="AdarshGrewal/kernel_xiaomi_sweet" remote="github" revision="11" />
+  <project path="device/xiaomi/sweet" name="surajdazz/device_xiaomi_sweet" remote="github" revision="derp-11" />
+  <project path="vendor/xiaomi/sweet" name="DerpFest-Devices/vendor_xiaomi_sweet" remote="github" revision="derp-11 clone-depth="1" />
+  <project path="kernel/xiaomi/sweet" name="AdarshGrewal/kernel_xiaomi_sweet" remote="github" revision="11" clone-depth="1" />
 
 </manifest>
